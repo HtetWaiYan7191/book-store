@@ -1,9 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Navbar from './Navbar';
+import AddBooks from './AddBooks';
+import BooksContainer from './BooksContainer';
 
-const Home = () => (
-  <div>
-    <h1>This is Home</h1>
-  </div>
-);
+function Home() {
+  const [books, setBooks] = useState([]);
+  const [bookTitle, setBookTitle] = useState('');
+  const [input, setInput] = useState('');
+
+  const handleChange = (e) => {
+    setInput(e.target.value);
+    setBookTitle(e.target.value);
+  };
+
+  const handleSubmit = () => {
+    setBooks((prevState) => [...prevState, bookTitle]);
+    setInput('');
+    console.log(books);
+  };
+
+  return (
+    <div>
+      <Navbar />
+      <BooksContainer books={books} />
+      <AddBooks
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+        input={input}
+      />
+    </div>
+  );
+}
 
 export default Home;
