@@ -8,7 +8,7 @@ function Home() {
   const [books, setBooks] = useState([]);
   const [bookTitle, setBookTitle] = useState('');
   const [input, setInput] = useState('');
-  const [author, setAuthor] = useState('');
+  const [author, setAuthor] = useState('htet');
   const [warmMessage, setWarmMessage] = useState('');
 
   const handleChange = (e) => {
@@ -35,17 +35,20 @@ function Home() {
     }
   };
 
+  const delBook = (id) => {
+    setBooks((prevBooks) => prevBooks.filter((book) => book.id !== id));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    e.stopPropagation();
     addBook(input);
-    // setBooks((prevState) => [...prevState, bookTitle]);
-    // setInput('');
   };
 
   return (
     <div>
       <Navbar />
-      <BooksContainer books={books} />
+      <BooksContainer books={books} delBook={delBook} />
       <AddBooks
         handleChange={handleChange}
         handleSubmit={handleSubmit}
