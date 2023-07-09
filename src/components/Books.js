@@ -6,7 +6,8 @@ const Books = ({
 }) => (
   <div className="book-card flex justify-around border border-1 py-5 my-5">
     <h2>
-      this is
+      This is
+      {' '}
       {book}
       {' '}
       by
