@@ -1,18 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 import Books from './Books';
 
-const BooksContainer = ({ books, delBook }) => (
-  <div className="book-container  w-[65%] mx-auto my-10">
-    {books.map((book) => (
-      <Books key={book.id} book={book.title} author={book.author} delBook={delBook} id={book.id} />
-    ))}
-  </div>
-);
-
-BooksContainer.propTypes = {
-  books: PropTypes.string.isRequired,
-  delBook: PropTypes.func.isRequired,
+const BooksContainer = () => {
+  const bookList = useSelector((state) => state.books.value);
+  return (
+    <div className="book-container w-[65%] mx-auto my-10">
+      {bookList.map((book) => (
+        <Books key={book.item_id} book={book} />
+      ))}
+    </div>
+  );
 };
 
 export default BooksContainer;
