@@ -9,7 +9,6 @@ const initialState = {
 const API_KEY = 'veK2RENLNDrvP6ac4WVX';
 const URL = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/${API_KEY}/books`;
 
-
 const booksSlice = createSlice({
   name: 'books',
   initialState,

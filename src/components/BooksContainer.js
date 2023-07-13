@@ -13,12 +13,12 @@ const BooksContainer = () => {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-    }
-      const api = await fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/', settings);
-      const data = await api.text();
-      console.log(data)
-  }
-  
+    };
+    const api = await fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/', settings);
+    const data = await api.text();
+    console.log(data);
+  };
+
   useEffect(() => {
     fetchApi();
   }, []);
