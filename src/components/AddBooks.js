@@ -1,11 +1,12 @@
 // eslint-disable-react/prop-types
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBooks } from '../features/books/booksSlice';
+import { addNewBookToApi } from '../features/books/booksSlice';
 
 function AddBooks() {
   const dispatch = useDispatch();
+  const loading = useSelector((state) => state.loading);
   const initialState = { title: '', category: '', author: '' };
   const [newBook, setNewBook] = useState(initialState);
 
@@ -22,6 +23,19 @@ function AddBooks() {
             setNewBook({ ...newBook, title: e.target.value });
           }}
         />
+        <select
+          name={newBook.category}
+          value={newBook.category}
+          className="w-[20%]"
+          onChange={(e) => {
+            setNewBook((prev) => ({ ...prev, category: e.target.value }));
+          }}
+        >
+          <option value="" defaultValue="Categirues">Categories</option>
+          <option value="Action">Action</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Biography">Biography</option>
+        </select>
         <select
           name={newBook.author}
           value={newBook.author}
@@ -40,8 +54,8 @@ function AddBooks() {
           onClick={(e) => {
             e.preventDefault();
             if (newBook.title !== '' && newBook.author !== '') {
-              dispatch(addBooks({ item_id: uuidv4(), ...newBook }));
-              setNewBook(initialState);
+              dispatch(addNewBookToApi({ item_id: uuidv4(), ...newBook }));
+              if (loading) setNewBook(initialState);
             }
           }}
           className="w-[10%] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
