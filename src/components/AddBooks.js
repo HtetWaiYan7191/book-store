@@ -7,7 +7,9 @@ import { addNewBookToApi } from '../features/books/booksSlice';
 function AddBooks() {
   const dispatch = useDispatch();
   const loading = useSelector((state) => state.loading);
-  const initialState = { title: '', category: '', author: '' };
+  const initialState = {
+    title: '', category: '', author: '', item_id: '',
+  };
   const [newBook, setNewBook] = useState(initialState);
 
   return (
@@ -53,8 +55,8 @@ function AddBooks() {
           type="submit"
           onClick={(e) => {
             e.preventDefault();
-            if (newBook.title !== '' && newBook.author !== '') {
-              dispatch(addNewBookToApi({ item_id: uuidv4(), ...newBook }));
+            if (newBook.title !== '' && newBook.author !== '' && newBook.category !== '') {
+              dispatch(addNewBookToApi({ ...newBook, item_id: uuidv4() }));
               if (loading) setNewBook(initialState);
             }
           }}
