@@ -14,7 +14,6 @@ const BooksContainer = () => {
   // const fetchBooks = async () => {
   //   const api = await fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/', { method: 'POST' });
   //   const result = await api.text();
-  //   console.log(result);
   // };
   // useEffect(() => {
   //   fetchBooks();
