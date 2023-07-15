@@ -11,7 +11,7 @@ function Books({ book }) {
   const chapter = Math.floor(Math.random() * 20);
   return (
     <div className="book-card flex gap-5  border border-1 py-5 my-5 items-center align-bottom">
-      <div className=" first-part w-[40%] pl-3">
+      <div className=" first-part w-[40%] pl-5">
         <h2 className="book-category">{book.category}</h2>
         <h2 className="book-title">{book.title}</h2>
         <span className="book-text">{book.author}</span>
@@ -61,8 +61,13 @@ function Books({ book }) {
         </div>
       </div>
       <div className="verticle-line" />
-      <div className=" w-[25%] third-part bg-red-500">
-        Final part
+      <div className=" w-[25%] third-part">
+        <h2 className="current-chapter">CURRENT CHAPTER</h2>
+        <h2 className="chapter">
+          Chapter
+          {chapter}
+        </h2>
+        <button type="button" className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 update-btn">UPDATE PROGRESS</button>
       </div>
     </div>
   );

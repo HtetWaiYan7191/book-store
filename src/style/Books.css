@@ -46,3 +46,25 @@ ul {
     font-size: 0.875rem;
     color: #888;
 }
+
+.book-card {
+    background-color: #e8e8e8;
+}
+
+.current-chapter {
+    font-family: RobotoSlab;
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: #888;
+}
+
+.chapter {
+    font-family: RobotoSlab;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.update-btn {
+    font-family: RobotoSlab;
+    font-weight: 300;
+}
