@@ -30,3 +30,19 @@ ul {
     border: 1px solid #e8e8e8;
     margin-right: 1.063rem;
 }
+
+.verticle-line {
+    border: 1px solid #e8e8e8;
+    height: 4.25rem;
+}
+
+.progress-percent {
+    font-family: Montserrat;
+    font-size: 2rem;
+}
+
+.progress-text {
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    color: #888;
+}
