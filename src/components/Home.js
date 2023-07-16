@@ -5,30 +5,11 @@ import BooksContainer from './BooksContainer';
 
 function Home() {
   const [books, setBooks] = useState([]);
-  // const [author, setAuthor] = useState('htet');
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // const handleChange = (e) => {
-  //   setInput(e.target.value);
-  // };
-
-  // const handleAuthor = (e) => {
-  //   setAuthor(e.target.value);
-  // };
-
-  // const addBook = (title) => {
-  //   if (title.trim()) {
-  //     const newBook = {
-  //       id: uuidv4(),
-  //       title: bookTitle,
-  //       author,
-  //     };
-  //     setBooks((prevState) => [...prevState, newBook]);
-  //     setInput('');
-  //     setWarmMessage('');
-  //   } else {
-  //     setWarmMessage('You have to add something');
-  //   }
-  // };
+  const handleDarkMode = () => {
+    setIsDarkMode((prev) => !prev);
+  };
 
   const delBook = (id) => {
     setBooks((prevBooks) => prevBooks.filter((book) => book.id !== id));
@@ -41,8 +22,8 @@ function Home() {
   // };
 
   return (
-    <div>
-      <Navbar />
+    <div className={isDarkMode ? 'dark' : ''}>
+      <Navbar handleDarkMode={handleDarkMode} isDarkMode={isDarkMode} />
       <BooksContainer books={books} delBook={delBook} />
       <AddBooks />
     </div>
