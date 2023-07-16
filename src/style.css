@@ -1,3 +1,15 @@
 .active {
   color: #48bbff;
 }
+
+.navbar-title, .navbar-text {
+  font-family: Montserrat;
+}
+.navbar-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+.navbar-text {
+  font-size: 0.813rem;
+  font-weight: normal;
+}
