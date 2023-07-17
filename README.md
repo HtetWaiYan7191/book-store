@@ -26,8 +26,7 @@
 
 # 📖 [Book_Store] <a name="about-project"></a>
 
-> book store
-
+Book store is a webpage where users can add their favorite books, authors, and categories . The user can also keep track of how many chapters they have read on the webpage.
 
 
 ## 🛠 Built With <a name="built-with"></a>
