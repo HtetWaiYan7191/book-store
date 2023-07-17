@@ -1,20 +1,40 @@
 import React from 'react';
-import { BiSolidUser } from 'react-icons/bi';
+import { ImUser } from 'react-icons/im';
 import { NavLink } from 'react-router-dom';
+import { MdDarkMode } from 'react-icons/md';
+import PropTypes from 'prop-types';
+import { CiDark } from 'react-icons/ci';
 import '../style.css';
 
-const Navbar = () => (
-  <nav className=" flex justify-between py-10 px-16 items-center align-middle shadow-md">
+const Navbar = ({ handleDarkMode, isDarkMode }) => (
+  <nav className=" flex justify-between py-10 px-16 items-center align-middle border border-b-2 dark:bg-gray-800 dark:border-none">
     <ul className=" flex justify-around w-[40%]  items-center">
-      <h2 className=" text-4xl text-sky-500 font-semibold">Book Store</h2>
-      <li><NavLink to="/">Home</NavLink></li>
-      <li><NavLink to="/category">Categories</NavLink></li>
+      <h2 className=" navbar-title">Bookstore CMS</h2>
+      <li className="navbar-text"><NavLink to="/" className=" dark:text-white-500">BOOKS</NavLink></li>
+      <li className="navbar-text"><NavLink to="/category">CATEGORIES</NavLink></li>
     </ul>
 
-    <div>
-      <BiSolidUser className="text-2xl" />
+    <div className="flex align-middle">
+      <div className="user-icon-container me-4"><ImUser className="text-2xl user-icon dark:text-sky-500" /></div>
+      {isDarkMode ? (
+        <button type="button" onClick={handleDarkMode}>
+          <MdDarkMode className="text-2xl text-white" />
+        </button>
+      ) : (
+        <button type="button" onClick={handleDarkMode}>
+          <CiDark className="text-2xl " />
+        </button>
+      )}
     </div>
   </nav>
 );
+Navbar.defaultProps = {
+  handleDarkMode: () => {},
+};
+
+Navbar.propTypes = {
+  handleDarkMode: PropTypes.func,
+  isDarkMode: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 
 export default Navbar;

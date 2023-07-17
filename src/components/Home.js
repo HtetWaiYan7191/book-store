@@ -5,14 +5,19 @@ import BooksContainer from './BooksContainer';
 
 function Home() {
   const [books, setBooks] = useState([]);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const handleDarkMode = () => {
+    setIsDarkMode((prev) => !prev);
+  };
 
   const delBook = (id) => {
     setBooks((prevBooks) => prevBooks.filter((book) => book.id !== id));
   };
 
   return (
-    <div>
-      <Navbar />
+    <div className={isDarkMode ? 'dark' : ''}>
+      <Navbar handleDarkMode={handleDarkMode} isDarkMode={isDarkMode} />
       <BooksContainer books={books} delBook={delBook} />
       <AddBooks />
     </div>
