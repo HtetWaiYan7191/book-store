@@ -12,7 +12,7 @@ const BooksContainer = () => {
   }, [dispatch]);
 
   return (
-    <div className="book-container w-[100%] mx-auto  dark:bg-gray-700 py-16 px-72">
+    <div className="book-container w-[80%] mx-auto  dark:bg-gray-700 py-16  border-b">
       {bookList?.map((book) => (
         <Books key={book.item_id} book={book} />
       ))}

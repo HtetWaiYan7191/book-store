@@ -14,9 +14,9 @@ function AddBooks() {
   const [newBook, setNewBook] = useState(initialState);
 
   return (
-    <div className="add-new-book-container dark:bg-gray-800 pt-5 pb-10">
+    <div className="add-new-book-container dark:bg-gray-800 pt-[1.813rem] pb-10">
       <h2 className="text-2xl ps-3 addbook-title dark:text-sky-500">Add New Book</h2>
-      <form className="w-[70%] mx-auto py-3">
+      <form className="w-[70%] mx-auto py-3 ">
         <div className="flex gap-5">
           <input
             type="text"

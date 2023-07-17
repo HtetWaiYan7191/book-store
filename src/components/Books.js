@@ -10,13 +10,13 @@ function Books({ book }) {
   const progress = Math.floor(Math.random() * 100);
   const chapter = Math.floor(Math.random() * 20);
   return (
-    <div className="book-card flex gap-5  border border-1 py-5 my-5 items-center align-bottom dark:bg-gray-900">
+    <div className="book-card flex gap-5  border border-1 py-5 my-[0.938rem] items-center align-bottom dark:bg-gray-900">
       <div className=" first-part w-[40%] pl-5">
         <h2 className="book-category dark:text-sky-700">{book.category}</h2>
         <h2 className="book-title dark:text-gray-200">{book.title}</h2>
         <span className="book-text">{book.author}</span>
         <ul className="user-features flex w-[40%] mt-4">
-          <li className="book-text me-3"><button type="button">Comments</button></li>
+          <li className="book-text me-3"><button type="button" className="book-text">Comments</button></li>
           <div className="feature-verticle-line " />
           <li className="book-text me-3">
             <button
@@ -57,7 +57,7 @@ function Books({ book }) {
             {' '}
             %
           </h2>
-          <span className="progress-text dark:text-gray-300">Completed</span>
+          <span className="progress-text">Completed</span>
         </div>
       </div>
       <div className="verticle-line" />
@@ -67,7 +67,7 @@ function Books({ book }) {
           Chapter
           {chapter}
         </h2>
-        <button type="button" className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 update-btn">UPDATE PROGRESS</button>
+        <button type="button" className=" bg-[#0290ff] mt-4 update-btn text-center">UPDATE PROGRESS</button>
       </div>
     </div>
   );
