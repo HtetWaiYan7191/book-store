@@ -26,8 +26,7 @@
 
 # 📖 [Book_Store] <a name="about-project"></a>
 
-> book store
-
+Book store is a webpage where users can add their favorite books, authors, and categories . The user can also keep track of how many chapters they have read on the webpage.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -72,7 +71,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:HtetWaiYan7191/math-magicians.git
+  git clone git@github.com:HtetWaiYan7191/book-store.git
 ```
 
 
@@ -134,7 +133,7 @@ npx eslint . --fix
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/HtetWaiYan7191/math-magicians/issues).
+Feel free to check the [issues page](https://github.com/HtetWaiYan7191/book-store/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,7 +155,7 @@ Feel free to check the [issues page](https://github.com/HtetWaiYan7191/math-magi
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/HtetWaiYan7191/math-magicians/blob/project-set-up/MIT.md) licensed.
+This project is [MIT](https://github.com/HtetWaiYan7191/book-store/blob/project-set-up/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
