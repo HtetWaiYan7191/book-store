@@ -1,70 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,500;0,600;0,700;1,200;1,400;1,500;1,700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Roboto+Slab:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Space+Mono&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Ysabeau+SC:wght@1;100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,500;0,600;0,700;1,200;1,400;1,500;1,700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Space+Mono&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Ysabeau+SC:wght@1;100;200;300;400;500;600;700;800;900&display=swap');
 
-
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .book-category {
-    color: #888;
-    font-size: 0.875rem;
-    font-weight: bold;
-    font-family: Montserrat;
+  color: #888;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-family: Montserrat;
 }
 
 .book-title {
-    font-family: RobotoSlab;
+  font-family: RobotoSlab;
   font-size: 1.375rem;
   font-weight: bold;
 }
 
 .book-text {
-    font-family: RobotoSlab;
-    font-size: 0.875rem;
-    font-weight: normal;
-    color:#4386bf;
+  font-family: RobotoSlab;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #4386bf;
 }
 
 .feature-verticle-line {
-    border: 1px solid #e8e8e8;
-    margin-right: 1.063rem;
+  border: 1px solid #e8e8e8;
+  margin-right: 1.063rem;
 }
 
 .verticle-line {
-    border: 1px solid #e8e8e8;
-    height: 4.25rem;
+  border: 1px solid #e8e8e8;
+  height: 4.25rem;
 }
 
 .progress-percent {
-    font-family: Montserrat;
-    font-size: 2rem;
+  font-family: Montserrat;
+  font-size: 2rem;
 }
 
 .progress-text {
-    font-family: Montserrat;
-    font-size: 0.875rem;
-    color: #888;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  color: #888;
 }
 
 .book-card {
-    background-color: #e8e8e8;
+  background-color: #e8e8e8;
 }
 
 .current-chapter {
-    font-family: RobotoSlab;
+  font-family: RobotoSlab;
   font-size: 0.813rem;
   font-weight: 300;
   color: #888;
 }
 
 .chapter {
-    font-family: RobotoSlab;
+  font-family: RobotoSlab;
   font-size: 1rem;
   font-weight: 300;
 }
 
 .update-btn {
-    font-family: RobotoSlab;
-    font-weight: 300;
+  font-family: RobotoSlab;
+  font-weight: 300;
 }
