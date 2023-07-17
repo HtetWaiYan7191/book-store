@@ -21,7 +21,7 @@ ul {
 .book-text {
   font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
-  font-weight: normal;
+  font-weight: 300;
   color: #4386bf;
 }
 
@@ -38,32 +38,40 @@ ul {
 .progress-percent {
   font-family: Montserrat, sans-serif;
   font-size: 2rem;
+  color: #121212;
 }
 
 .progress-text {
   font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
-  color: #888;
+  color: #121212;
+  opacity: 0.5;
 }
 
 .book-card {
-  background-color: #e8e8e8;
+  background-color: #fff;
 }
 
 .current-chapter {
   font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
-  color: #888;
+  color: #121212;
+  opacity: 0.5;
 }
 
 .chapter {
   font-family: RobotoSlab, sans-serif;
   font-size: 1rem;
   font-weight: 300;
+  color: #121212;
 }
 
 .update-btn {
   font-family: RobotoSlab, sans-serif;
   font-weight: 300;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
 }
