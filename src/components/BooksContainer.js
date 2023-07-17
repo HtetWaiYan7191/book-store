@@ -11,14 +11,6 @@ const BooksContainer = () => {
     dispatch(fetchBook());
   }, [dispatch]);
 
-  // const fetchBooks = async () => {
-  //   const api = await fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/', { method: 'POST' });
-  //   const result = await api.text();
-  // };
-  // useEffect(() => {
-  //   fetchBooks();
-  // }, []);
-
   return (
     <div className="book-container w-[65%] mx-auto my-10">
       {bookList?.map((book) => (
