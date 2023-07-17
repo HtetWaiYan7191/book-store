@@ -2,7 +2,7 @@
 
 .addbook-title {
   color: #888;
-  font-family: Montserrat,Sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   margin-left: 14rem;
@@ -10,12 +10,12 @@
 
 .add-book-input {
   color: #888;
-  font-family:  Montserrat,Sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1rem;
 }
 
 ::placeholder {
-  font-family:  Montserrat,Sans-serif;
+  font-family: Montserrat, sans-serif;
   padding: 0.813rem 0;
   margin-left: 1.06rem;
 }
