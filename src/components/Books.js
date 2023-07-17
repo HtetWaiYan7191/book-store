@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import { useDispatch } from 'react-redux';
-import { removeBookFromApi } from '../features/books/booksSlice';
 import '../style/Books.css';
+import { removeBookFromApi } from '../redux/books/booksSlice';
 
 function Books({ book }) {
   const dispatch = useDispatch();

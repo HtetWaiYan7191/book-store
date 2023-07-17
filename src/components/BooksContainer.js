@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Books from './Books';
-import { fetchBook } from '../features/books/booksSlice';
+import { fetchBook } from '../redux/books/booksSlice';
 
 const BooksContainer = () => {
   const bookList = useSelector((state) => state.books.value);
@@ -10,14 +10,6 @@ const BooksContainer = () => {
   useEffect(() => {
     dispatch(fetchBook());
   }, [dispatch]);
-
-  // const fetchBooks = async () => {
-  //   const api = await fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/', { method: 'POST' });
-  //   const result = await api.text();
-  // };
-  // useEffect(() => {
-  //   fetchBooks();
-  // }, []);
 
   return (
     <div className="book-container w-[100%] mx-auto  dark:bg-gray-700 py-16 px-72">

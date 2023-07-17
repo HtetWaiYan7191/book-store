@@ -15,12 +15,6 @@ function Home() {
     setBooks((prevBooks) => prevBooks.filter((book) => book.id !== id));
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   e.stopPropagation();
-  //   addBook(input);
-  // };
-
   return (
     <div className={isDarkMode ? 'dark' : ''}>
       <Navbar handleDarkMode={handleDarkMode} isDarkMode={isDarkMode} />
