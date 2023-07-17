@@ -97,8 +97,8 @@ To run the project, execute the following command:
 To run tests for the linter, run the following command:
 
 ```sh
- npx hint .
-npx eslint . --fix
+npx stylelint "**/*.{css,scss}" --fix
+ npx eslint "**/*.{js,jsx}" --fix
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
