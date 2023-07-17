@@ -8,6 +8,10 @@ body {
   background-color: #fafafa;
 }
 
+.dark{
+  background-color: rgb(55, 65, 81);
+}
+
 .dark .active {
   color: #fff;
 }

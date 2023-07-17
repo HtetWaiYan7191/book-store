@@ -10,7 +10,7 @@ function Books({ book }) {
   const progress = Math.floor(Math.random() * 100);
   const chapter = Math.floor(Math.random() * 20);
   return (
-    <div className="book-card flex gap-5  border border-1 py-5 my-[0.938rem] items-center align-bottom dark:bg-gray-900">
+    <div className="book-card flex gap-5  border border-1 py-5 my-[0.938rem] items-center align-bottom dark:bg-gray-900 dark:border-gray-300">
       <div className=" first-part w-[40%] pl-5">
         <h2 className="book-category dark:text-sky-700">{book.category}</h2>
         <h2 className="book-title dark:text-gray-200">{book.title}</h2>

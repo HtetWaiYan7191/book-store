@@ -7,7 +7,7 @@ import { CiDark } from 'react-icons/ci';
 import '../style.css';
 
 const Navbar = ({ handleDarkMode, isDarkMode }) => (
-  <nav className=" flex justify-between py-10 px-16 items-center align-middle border border-b-2 dark:bg-gray-800">
+  <nav className=" flex justify-between py-10 px-16 items-center align-middle border border-b-2 dark:bg-gray-800 dark:border-none">
     <ul className=" flex justify-around w-[40%]  items-center">
       <h2 className=" navbar-title">Bookstore CMS</h2>
       <li className="navbar-text"><NavLink to="/" className=" dark:text-white-500">BOOKS</NavLink></li>
