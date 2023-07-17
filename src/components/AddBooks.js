@@ -21,7 +21,7 @@ function AddBooks() {
           <input
             type="text"
             placeholder="Book title"
-            className="w-[50%] dark:placeholder:text-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 ps-4 rounded-sm add-book-input focus:border-none dark:bg-slate-600 dark:text-gray-200"
+            className="w-[50%] border dark:placeholder:text-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 ps-4 rounded-sm add-book-input focus:border-none dark:bg-slate-600 dark:text-gray-200"
             value={newBook.title}
             onChange={(e) => {
               setNewBook({ ...newBook, title: e.target.value });
